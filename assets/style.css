@@ -60,9 +60,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--body);
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 1.58;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.62;
 }
 
 /* --- particle network sits behind the whole page -------------- */
