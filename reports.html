@@ -35,12 +35,12 @@
 <style id="site-chrome">
   html, body { overflow: visible !important; height: auto !important; }
   body { font-size: 16.5px !important; line-height: 1.5 !important; }
-  .page { width: 720px !important; padding-top: 28px !important;
+  .page { width: min(720px, 100% - 72px) !important; padding-top: 28px !important;
           margin-left:auto !important; margin-right:auto !important;
           max-width:100% !important; box-sizing:border-box; }
   .page h1 { font-size: 30px !important; }
   .page h2 { font-size: 17px !important; margin-top: 26px !important; }
-  @media (max-width: 720px) { .page { width: auto !important; } }
+  @media (max-width: 620px) { .page { width: min(720px, 100% - 32px) !important; } }
   .ssx-strip{background:#fdf6e3;color:#3b3524;text-align:center;padding:13px 20px;
     font-family:'EB Garamond',Georgia,serif;font-size:17px;font-weight:600;
     border-bottom:1px solid rgba(0,0,0,.05)}

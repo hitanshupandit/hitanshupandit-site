@@ -292,14 +292,14 @@
 <style id="site-chrome">
   /* the embed was sized for a narrow iframe; normalise type for a full page */
   body { font-size: 16.5px !important; line-height: 1.5 !important; }
-  .page { width: 720px !important; padding-top: 28px !important; }
+  .page { width: min(720px, 100% - 72px) !important; padding-top: 28px !important; }
   .page h1 { font-size: 30px !important; }
   .page h2 { font-size: 17px !important; margin-top: 26px !important; }
 
   /* the embeds were sized for a fixed-width iframe; centre them as pages */
   .page { margin-left: auto !important; margin-right: auto !important;
           max-width: 100% !important; box-sizing: border-box; }
-  @media (max-width: 720px) { .page { width: auto !important; } }
+  @media (max-width: 620px) { .page { width: min(720px, 100% - 32px) !important; } }
 
   /* the embeds were built for a fixed-height iframe; let them scroll as pages */
   html, body { overflow: visible !important; height: auto !important; }
