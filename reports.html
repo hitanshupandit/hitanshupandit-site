@@ -1,109 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8"/> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Reports &amp; Memos — Hitanshu Pandit</title>
-<meta name="description" content="Technical reports and policy memoranda prepared for the City of Boston, NC DHHS and Northeastern University."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Merriweather:wght@400;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/style.css"/>
-<script src="assets/main.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #ffffff; }
+  body { font-family: 'EB Garamond', Georgia, serif; color: #1c1c1c; font-size: 19px; line-height: 1.55; }
+  a { color: #1c3f8f; text-underline-offset: 3px; }
+  #bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .grid { position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: linear-gradient(rgba(17,82,166,.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(17,82,166,.04) 1px, transparent 1px);
+    background-size: 48px 48px; }
+  .page { position: relative; z-index: 1; width: 680px; margin: 0; padding: 36px 24px 56px; }
+  h1 { font-size: 34px; font-weight: 600; line-height: 1.15; }
+  .role { color: #444; margin-top: 4px; }
+  .intro { margin-top: 14px; }
+  .links { margin-top: 14px; }
+  .links a { margin-right: 4px; }
+  .links span { color: #999; margin: 0 6px 0 2px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 30px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #d9dde5; }
+  .item { margin-bottom: 10px; }
+  .row { display: flex; justify-content: space-between; gap: 16px; }
+  .yr { white-space: nowrap; color: #555; }
+  .note { color: #555; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 5px; }
+  html, body { overflow: hidden; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=EB+Garamond:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<style id="site-chrome">
+  html, body { overflow: visible !important; height: auto !important; }
+  body { font-size: 16.5px !important; line-height: 1.5 !important; }
+  .page { width: 720px !important; padding-top: 28px !important;
+          margin-left:auto !important; margin-right:auto !important;
+          max-width:100% !important; box-sizing:border-box; }
+  .page h1 { font-size: 30px !important; }
+  .page h2 { font-size: 17px !important; margin-top: 26px !important; }
+  @media (max-width: 720px) { .page { width: auto !important; } }
+  .ssx-strip{background:#fdf6e3;color:#3b3524;text-align:center;padding:13px 20px;
+    font-family:'EB Garamond',Georgia,serif;font-size:17px;font-weight:600;
+    border-bottom:1px solid rgba(0,0,0,.05)}
+  .ssx-bar{background:#fff;border-bottom:1px solid #dfe4ee}
+  .ssx-bar-in{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;
+    align-items:center;gap:18px;flex-wrap:wrap}
+  .ssx-brand{font-family:'Merriweather',Georgia,serif;font-weight:700;font-size:19px;
+    color:#0d1b3e;text-decoration:none;margin-right:auto;white-space:nowrap}
+  .ssx-nav{display:flex;flex-wrap:wrap;gap:4px}
+  .ssx-nav a{font-family:'Merriweather',Georgia,serif;font-size:13px;color:#0d1b3e;
+    text-decoration:none;padding:5px 10px;white-space:nowrap}
+  .ssx-nav a:hover{color:#1a73e8}
+  .ssx-nav a[aria-current="page"]{font-weight:700;border-bottom:2px solid #1a73e8}
+  .ssx-foot{border-top:1px solid #dfe4ee;padding:22px 0 40px;text-align:center;
+    font-family:'Share Tech Mono',monospace;font-size:12.5px;color:#6a90b8}
+</style>
 </head>
 <body>
+<div class="ssx-strip">Hi, I am on the 2026&ndash;27 job market and available for interviews</div>
+<div class="ssx-bar"><div class="ssx-bar-in"><a class="ssx-brand" href="index.html">Hitanshu Pandit</a><nav class="ssx-nav"><a href="index.html">Home</a><a href="cv.html">CV/Resume</a><a href="teaching.html">Teaching</a><a href="research.html">Research</a><a href="reports.html" aria-current="page">Reports &amp; Memos</a><a href="resources.html">Resources</a></nav></div></div>
 
-<canvas id="hero-canvas" aria-hidden="true"></canvas>
-<div class="hero-grid" aria-hidden="true"></div>
+<div class="grid"></div>
+<main class="page">
+  <h1>Reports &amp; Memos</h1>
+  <div class="role">Analysis commissioned and used by public agencies</div>
+<h2>Applied and Policy Work</h2>
+  <ul>
+    <li><b>City of Boston.</b> Research partnership on the SuccessLink summer jobs program, which serves more than 10,000 young people a year. I wrote 12 analytical memos for the director of the City's Worker Empowerment Cabinet, built on linked state education records, applications and employers' hiring decisions.</li>
+    <li><b>North Carolina Department of Health and Human Services.</b> Evaluation of a statewide Medicaid care-coordination program using fee-for-service claims (more than 50 million records); emergency department spending fell about 20 percent.</li>
+    <li><b>New Jersey Department of Labor and Workforce Development.</b> Invited talk, 2026.</li>
+  </ul>
 
-<div class="strip">Hi, I am on the 2026&ndash;27 job market and available for interviews</div>
+  <h2>Media Coverage and Writing</h2>
+  <ul>
+    <li>Research on California's fast-food minimum wage covered by <i>Inc.</i> and Phys.org.</li>
+    <li>California fast-food minimum wage paper cited in a <a href="https://cepr.org/voxeu/columns/establishment-level-evidence-californias-fast-food-minimum-wage" target="_blank" rel="noopener">VoxEU column</a> by Vitor Melo, David Neumark, Liam Sigaud and Gary A. Wagner (2026).</li>
+    <li>Research on New York City congestion pricing covered by Social Storytellers Collective.</li>
+    <li>Op-ed, “IndiGo's Dominance: Fragile Skies, Fare Caps, and India's Aviation Market,” <i>New India Abroad</i>.</li>
+  </ul>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="index.html">Hitanshu Pandit</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV/Resume</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="research.html">Research</a>
-      <a href="reports.html" aria-current="page">Reports &amp; Memos</a>
-      <a href="resources.html">Resources</a>
-    </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch theme">☾</button>
-  </div>
-</header>
+  </main>
 
-<main>
-  <div class="wrap">
-    <h1 class="page-title">Reports &amp; Memos</h1>
-    <p class="page-sub">Analysis commissioned and used by public agencies.</p>
-
-    <h2 class="section">Published briefs</h2>
-
-    <div class="entry">
-      <h3>Building Opportunity for Boston's Youth: Lessons from the WorkSMART Integrated Employment Program</h3>
-      <p class="meta">with Mella McCormick · Community to Community, Policy Equity for All, Policy Brief 2025-1, Northeastern University</p>
-      <p class="links">
-        <a href="https://cssh.northeastern.edu/dukakiscenter/wp-content/uploads/sites/36/2026/07/pb13.pdf">PDF</a>
-        <a href="https://impactengines.northeastern.edu/ia/c2c/policy-briefs/">Series</a>
-      </p>
-    </div>
-
-    <div class="entry">
-      <h3>Assessing the Effectiveness of In-School Workshops on Youth Application and Onboarding Rates for the SuccessLink Summer Jobs Program</h3>
-      <p class="meta">with Josh Lown &amp; Samiksha Bhatnagar · Office of Youth Employment, City of Boston</p>
-      <p class="links"><a href="https://impactengines.northeastern.edu/ia/c2c/policy-briefs/">Brief</a></p>
-    </div>
-
-    <div class="entry">
-      <h3>IndiGo's Dominance: Fragile Skies, Fare Caps, and India's Aviation Market</h3>
-      <p class="meta"><em>New India Abroad</em></p>
-      <p class="links">
-        <a href="https://www.newindiaabroad.com/english/opinion/indias-skies-were-already-sick-before-the-war-arrived">Article</a>
-        <a href="https://hitanshupandit.github.io/hitanshupandit.com/Indigo_case_study_hpandit.pdf">Case study</a>
-      </p>
-    </div>
-
-    <h2 class="section">Submitted to agencies</h2>
-
-    <div class="entry">
-      <h3>Estimating the Cost Savings of Tiered Care Coordination for At-Risk Youth: Evidence from North Carolina</h3>
-      <p class="meta">with Jeremy Bray, Will Queen &amp; Zubab Moid · submitted to NC DHHS</p>
-    </div>
-
-    <div class="entry">
-      <h3>Estimating the Cost Savings of High-Fidelity Wraparound: Evidence from North Carolina</h3>
-      <p class="meta">with Jeremy Bray &amp; Zubab Moid · submitted to NC DHHS</p>
-    </div>
-
-    <h2 class="section">SuccessLink Summer Jobs Program — City of Boston, 2022&ndash;2026</h2>
-
-    <p>
-      Twelve technical memoranda prepared for the Office of Youth Employment on youth application,
-      employer selection and hiring equity across city and grant partners.
-    </p>
-
-    <ul class="plain">
-      <li>Assessing equity by race and gender among employer partners after the DEI randomization, 2024</li>
-      <li>Application, selection and hiring rates across city and grant partners, 2024</li>
-      <li>Application, selection and hiring rates across city and grant partners, 2023</li>
-      <li>Boston Public School breakdown across city and grant partners, 2024</li>
-      <li>Boston Public School breakdown across city and grant partners, 2023</li>
-      <li>Boston Public School breakdown across city and grant partners, 2022</li>
-      <li>Boston Public School representation across city and grant partners, 2022</li>
-      <li>Hired youth by neighborhood across city partners, 2023</li>
-      <li>Rehired youth across city partners, 2023</li>
-      <li>Youth who turned down city partner job offers, 2023</li>
-    </ul>
-
-  </div>
-</main>
-
-<footer>
-  <div class="wrap">
-    Hitanshu Pandit &nbsp;&middot;&nbsp; Updated November 2026
-  </div>
-</footer>
-
+<div class="ssx-foot">Hitanshu Pandit &nbsp;&middot;&nbsp; Updated November 2026</div>
+<script>
+(function(){function f(){['documentElement','body'].forEach(function(k){
+  var e=document[k]; if(!e) return;
+  e.style.setProperty('overflow','visible','important');
+  e.style.setProperty('height','auto','important');});}
+f(); document.addEventListener('DOMContentLoaded', f);})();
+</script>
 </body>
 </html>
