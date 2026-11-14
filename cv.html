@@ -34,6 +34,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=EB+Garamond:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
 
 <style id="site-chrome">
+  /* the embeds were sized for a fixed-width iframe; centre them as pages */
+  .page { margin-left: auto !important; margin-right: auto !important;
+          max-width: 100% !important; box-sizing: border-box; }
+  @media (max-width: 720px) { .page { width: auto !important; } }
+
   /* the embeds were built for a fixed-height iframe; let them scroll as pages */
   html, body { overflow: visible !important; height: auto !important; }
 
@@ -245,5 +250,13 @@ html.hp-idle #hp-cat { visibility: hidden; }
 </script>
 
 <div class="ssx-foot">Hitanshu Pandit &nbsp;&middot;&nbsp; Updated November 2026</div>
+<script>
+/* belt-and-braces: some embeds lock scrolling for their iframe context */
+(function(){function f(){['documentElement','body'].forEach(function(k){
+  var e=document[k]; if(!e) return;
+  e.style.setProperty('overflow','visible','important');
+  e.style.setProperty('height','auto','important');});}
+f(); document.addEventListener('DOMContentLoaded', f);})();
+</script>
 </body>
 </html>
