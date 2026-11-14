@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Resources — Hitanshu Pandit</title>
+<meta name="description" content="Public datasets for urban, labor and health economics, plus resources for graduate students."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Merriweather:wght@400;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script src="assets/main.js"></script>
+</head>
+<body>
+
+<canvas id="hero-canvas" aria-hidden="true"></canvas>
+<div class="hero-grid" aria-hidden="true"></div>
+
+<div class="strip">Hi, I am on the 2026&ndash;27 job market and available for interviews</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Hitanshu Pandit</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV/Resume</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="research.html">Research</a>
+      <a href="reports.html">Reports &amp; Memos</a>
+      <a href="resources.html" aria-current="page">Resources</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1 class="page-title">Resources</h1>
+    <p class="page-sub">Things I keep coming back to, and the datasets I actually use.</p>
+
+    <h2 class="section">Course books</h2>
+
+    <ul class="plain">
+      <li>
+        <strong><a href="https://hitanshupandit.github.io/eco368-book/">Data Science for Economists</a></strong>
+        &mdash; a reading companion for ECON 368, Bates College.
+        <span class="meta">R, data wrangling and applied prediction for economists.</span>
+      </li>
+      <li>
+        <strong><a href="https://hitanshupandit.github.io/eco348-book/">Urban Economics Lab</a></strong>
+        &mdash; interactive notes for ECON 348, Bates College.
+        <span class="meta">Spatial data, housing and city economics.</span>
+      </li>
+      <li>
+        <strong><a href="https://hitanshupandit.github.io/eco250-book/">Economics Statistics</a></strong>
+        &mdash; course notes for ECO 250, Bates College.
+      </li>
+    </ul>
+
+    <h2 class="section">For graduate students</h2>
+
+    <ul class="plain">
+      <li>
+        <strong>Economics conferences in the US</strong> —
+        Anne M. Burton and Barton Willage maintain a list of the major regional and international
+        economics conferences across fields.
+      </li>
+      <li>
+        <strong>How to form a research idea</strong> —
+        a resource by Alex Eble.
+      </li>
+      <li>
+        <strong>The Hidden Curriculum Podcast</strong> —
+        Sebastian Tello-Trillo and Alex Hollingsworth, with invited guests, on the things nobody tells
+        graduate students. [<a href="https://open.spotify.com/show/5PSNVBhCmuMPkX2tM2TIcU">Spotify</a>]
+      </li>
+    </ul>
+
+    <h2 class="section">Public data — United States</h2>
+
+    <ul class="plain">
+      <li>
+        <strong>U.S. Census, American Community Survey (ACS) &amp; PUMS</strong> — cross-sectional,
+        1-year and 5-year. <span class="meta">R: <code>tidycensus</code> · Python: <code>tidycensus</code></span>
+      </li>
+      <li>
+        <strong>Longitudinal Employer-Household Dynamics (LEHD)</strong> — includes Job-to-Job Flows
+        (J2J), LODES, Post-Secondary Employment Outcomes (PSEO), Quarterly Workforce Indicators (QWI)
+        and Veteran Employment Outcomes (VEO).
+        <span class="meta">R: <code>lehdr</code> · Python: <code>lehd</code></span>
+      </li>
+      <li>
+        <strong>Current Population Survey (CPS), BLS</strong> — monthly labor force statistics.
+        <span class="meta">R: <code>cpsR</code>, <code>blsAPI</code>, <code>qcewAPI</code> · Python: <code>PyCPS</code></span>
+      </li>
+      <li>
+        <strong>National Longitudinal Survey of Youth (NLSY), BLS</strong> — panel data across cohorts.
+      </li>
+      <li>
+        <strong>Panel Study of Income Dynamics (PSID)</strong> — representative sample of over 1,800
+        individuals in 5,000 families.
+      </li>
+      <li>
+        <strong>Health and Retirement Study (HRS)</strong> — longitudinal panel of roughly 20,000 people.
+      </li>
+      <li>
+        <strong>Home Ownership Affordability Monitor</strong> — monthly, Federal Reserve Bank of Atlanta.
+      </li>
+      <li>
+        <strong>Commuting zones and labor-sheds</strong> — economic areas since the 1960s, maintained by
+        Christopher S. Fowler.
+      </li>
+      <li>
+        <strong>Sub-state minimum wages</strong> — Economic Policy Institute and UC Berkeley.
+        <span class="meta">R: <code>epidata</code></span>
+      </li>
+      <li>
+        <strong>Survey of Consumer Finances (SCF)</strong> — Federal Reserve data on household wealth
+        since 1989.
+      </li>
+      <li>
+        <strong>Government finance, Reason Foundation</strong> — school district, municipality, county
+        and state level.
+      </li>
+      <li>
+        <strong>The Annie E. Casey Foundation</strong> — living situations and experiences of children
+        and families.
+      </li>
+    </ul>
+
+    <h2 class="section">Public data — India</h2>
+
+    <ul class="plain">
+      <li><strong>Kishan Narayan</strong> maintains a directory of Indian datasets.</li>
+      <li><strong>xKDR</strong> maintains datasets including night lights and the Indian justice system.</li>
+    </ul>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Hitanshu Pandit &nbsp;&middot;&nbsp; Updated November 2026
+  </div>
+</footer>
+
+</body>
+</html>
