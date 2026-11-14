@@ -84,6 +84,7 @@ body {
 .strip, .topbar, main, footer, .hero { position: relative; z-index: 2; }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+.wrap.wide { max-width: 1020px; }
 
 /* --- cream job-market strip ----------------------------------- */
 
@@ -149,6 +150,34 @@ body {
   aspect-ratio: 576 / 760;
   object-fit: cover;
   border-radius: 2px;
+}
+
+
+/* --- intro: photo left, bio right ---------------------------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 34px;
+  align-items: start;
+  max-width: 980px;
+  margin: 0 auto 10px;
+}
+.intro-photo { position: sticky; top: 86px; }
+.intro .portrait {
+  display: block; margin: 0;
+  width: 100%; max-width: 300px;
+  height: auto;
+  aspect-ratio: 576 / 760;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.intro-text > p:first-child { margin-top: 0; }
+
+@media (max-width: 820px) {
+  .intro { grid-template-columns: 1fr; gap: 22px; max-width: 760px; }
+  .intro-photo { position: static; justify-self: center; }
+  .intro .portrait { width: 72%; max-width: 320px; margin: 0 auto; }
 }
 
 /* --- body ----------------------------------------------------- */
