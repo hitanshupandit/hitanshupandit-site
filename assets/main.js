@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (var i = 0; i < n; i++) {
       dots.push({
         x: rand(0, W), y: rand(0, H),
-        vx: rand(-0.085, 0.085), vy: rand(-0.085, 0.085),
+        vx: rand(-0.025, 0.025), vy: rand(-0.025, 0.025),
         r: rand(0.9, 1.8), a: rand(0.25, 0.6)
       });
     }
