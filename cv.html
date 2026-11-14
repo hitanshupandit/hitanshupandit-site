@@ -1,97 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8"/> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CV &amp; Resume — Hitanshu Pandit</title>
-<meta name="description" content="Curriculum vitae and industry resume for Hitanshu Pandit, labor economist."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Merriweather:wght@400;700;900&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/style.css"/>
-<script src="assets/main.js"></script>
+<title>Hitanshu Pandit, CV</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #ffffff; }
+  body { font-family: 'EB Garamond', Georgia, serif; color: #1c1c1c; font-size: 19px; line-height: 1.55; }
+  a { color: #1c3f8f; text-underline-offset: 3px; }
+  #bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .grid { position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: linear-gradient(rgba(17,82,166,.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(17,82,166,.04) 1px, transparent 1px);
+    background-size: 48px 48px; }
+  .page { position: relative; z-index: 1; width: 680px; margin: 0; padding: 36px 24px 56px; }
+  h1 { font-size: 34px; font-weight: 600; line-height: 1.15; }
+  .role { color: #444; margin-top: 4px; }
+  .intro { margin-top: 14px; }
+  .links { margin-top: 14px; }
+  .links a { margin-right: 4px; }
+  .links span { color: #999; margin: 0 6px 0 2px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 30px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #d9dde5; }
+  .item { margin-bottom: 10px; }
+  .row { display: flex; justify-content: space-between; gap: 16px; }
+  .yr { white-space: nowrap; color: #555; }
+  .note { color: #555; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 5px; }
+  html, body { overflow: hidden; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=EB+Garamond:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+
+<style id="site-chrome">
+  .ssx-strip{background:#fdf6e3;color:#3b3524;text-align:center;padding:13px 20px;
+    font-family:'EB Garamond',Georgia,serif;font-size:17px;font-weight:600;
+    border-bottom:1px solid rgba(0,0,0,.05)}
+  .ssx-bar{background:#fff;border-bottom:1px solid #dfe4ee}
+  .ssx-bar-in{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;
+    align-items:center;gap:18px;flex-wrap:wrap}
+  .ssx-brand{font-family:'Merriweather',Georgia,serif;font-weight:700;font-size:19px;
+    color:#0d1b3e;text-decoration:none;margin-right:auto;white-space:nowrap}
+  .ssx-nav{display:flex;flex-wrap:wrap;gap:4px}
+  .ssx-nav a{font-family:'Merriweather',Georgia,serif;font-size:13px;color:#0d1b3e;
+    text-decoration:none;padding:5px 10px;white-space:nowrap}
+  .ssx-nav a:hover{color:#1a73e8}
+  .ssx-nav a[aria-current="page"]{font-weight:700;border-bottom:2px solid #1a73e8}
+  .ssx-foot{border-top:1px solid #dfe4ee;padding:22px 0 40px;text-align:center;
+    font-family:'Share Tech Mono',monospace;font-size:12.5px;color:#6a90b8}
+</style>
 </head>
 <body>
+<div class="ssx-strip">Hi, I am on the 2026&ndash;27 job market and available for interviews</div>
+<div class="ssx-bar"><div class="ssx-bar-in"><a class="ssx-brand" href="index.html">Hitanshu Pandit</a><nav class="ssx-nav"><a href="index.html">Home</a><a href="cv.html" aria-current="page">CV/Resume</a><a href="teaching.html">Teaching</a><a href="research.html">Research</a><a href="reports.html">Reports &amp; Memos</a><a href="resources.html">Resources</a></nav></div></div>
 
-<canvas id="hero-canvas" aria-hidden="true"></canvas>
-<div class="hero-grid" aria-hidden="true"></div>
+<canvas id="bg"></canvas>
+<div class="grid"></div>
+<main class="page">
 
-<div class="strip">Hi, I am on the 2026&ndash;27 job market and available for interviews</div>
+  <h1>Hitanshu Pandit, Ph.D.</h1>
+  <div class="role">Visiting Assistant Professor of Economics, Bates College · Visiting Research Fellow, Dukakis Center for Urban and Regional Policy, Northeastern University</div>
+  <p class="intro">I am an applied economist working on labor, health and urban questions. I build measures of work from large data that was never collected for research, such as job postings, worker profiles, mobile-device visits, card transactions and Medicaid claims, and I use them to answer questions that cities, state agencies and firms are already asking.</p>
+  <p class="links">
+    <a href="https://hitanshupandit.github.io/hitanshupandit.com/cv_hpandit.pdf" target="_blank" rel="noopener">Academic CV (PDF)</a><span>·</span>
+    <a href="https://hitanshupandit.github.io/hitanshupandit.com/resume_hpandit.pdf" target="_blank" rel="noopener">Resume (PDF)</a><span>·</span>
+    <a href="https://hitanshupandit.github.io/hitanshupandit.com/JMP_hpandit2026.pdf" target="_blank" rel="noopener">Job market paper</a><span>·</span>
+    <a href="https://github.com/hitanshupandit" target="_blank" rel="noopener">GitHub</a><span>·</span>
+    <a href="mailto:drhitanshupandit@gmail.com">Email</a>
+  </p>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="index.html">Hitanshu Pandit</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="cv.html" aria-current="page">CV/Resume</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="research.html">Research</a>
-      <a href="reports.html">Reports &amp; Memos</a>
-      <a href="resources.html">Resources</a>
-    </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch theme">☾</button>
-  </div>
-</header>
+  <h2>Appointments</h2>
+  <div class="item"><div class="row"><span><b>Bates College</b>, Visiting Assistant Professor of Economics</span><span class="yr">2026–present</span></div></div>
+  <div class="item"><div class="row"><span><b>Northeastern University</b>, Visiting Research Fellow, Dukakis Center for Urban and Regional Policy</span><span class="yr">2026–present</span></div></div>
+  <div class="item"><div class="row"><span><b>Northeastern University</b>, Postdoctoral Research Fellow, School of Public Policy and Urban Affairs</span><span class="yr">2023–2026</span></div></div>
+  <div class="item note">Research Affiliate: Global Labor Organization; NULab and GAP Initiative, Northeastern University</div>
 
-<main>
-  <div class="wrap">
-    <h1 class="page-title">CV &amp; Resume</h1>
-    <p class="page-sub">Academic CV for research and faculty positions; one-page resume for industry and policy roles.</p>
+  <h2>Education</h2>
+  <div class="item"><div class="row"><span><b>University of North Carolina at Greensboro</b>, Ph.D. in Economics</span><span class="yr">2023</span></div></div>
+  <div class="item"><div class="row"><span><b>Central University of Kerala</b>, M.A. in Economics</span><span class="yr">2018</span></div></div>
+  <div class="item"><div class="row"><span><b>SGTB Khalsa College, University of Delhi</b>, B.Sc. (Honors) in Mathematics</span><span class="yr">2014</span></div></div>
 
-    <div class="buttons">
-      <a class="btn" href="files/cv_pandit.pdf">Academic CV (PDF)</a>
-      <a class="btn ghost" href="files/resume_pandit.pdf">Resume (PDF)</a>
-    </div>
+  <h2>Publications and Papers in Revision</h2>
+  <div class="item">“Simply Can't Wait: Evaluating the Effect of Food Industry Minimum Wage Increase in California on Local Labor Markets.” <i>Applied Economics Letters</i>, 2026.</div>
+  <div class="item">“Behavioral Responses to Time-Varying Congestion Pricing: A Natural Experiment from NYC.” <i>Applied Economics Letters</i>, 2026.</div>
+  <div class="item">“Where the Rubber Meets the Road: Examining Efficiency and Equity in Designing Summer Youth Employment Programs” (with Alicia Sasser Modestino, Mindy Marks and Hanna Hoover). Revise and resubmit, <i>Journal of Policy Analysis and Management</i>.</div>
+  <div class="item">“Who Pays for Higher Wages? Evidence from Consumer Spending after California's Fast-Food Minimum Wage Increase.” Revise and resubmit, <i>Southern Economic Journal</i>.</div>
 
-    <h2 class="section">Appointments</h2>
-    <ul class="plain">
-      <li><strong>Bates College</strong> — Visiting Assistant Professor of Economics <span class="meta">· 2026&ndash;present</span></li>
-      <li><strong>Dukakis Center for Urban and Regional Policy, Northeastern University</strong> — Visiting Research Fellow <span class="meta">· 2026&ndash;present</span></li>
-      <li><strong>Northeastern University</strong> — Postdoctoral Research Fellow, School of Public Policy and Urban Affairs <span class="meta">· 2023&ndash;2026</span></li>
-    </ul>
+  <h2>Working Papers</h2>
+  <div class="item">“<a href="https://hitanshupandit.github.io/hitanshupandit.com/JMP_hpandit2026.pdf" target="_blank" rel="noopener">Splitting the Stack: Generative AI and the Cross-Country Division of Technical Work</a>” (job market paper).</div>
+  <div class="item">“Who Supplies the AI Frontier? Education, Training and Mobility of the Workforce of Frontier AI Firms” (with Mahima Nambiar).</div>
+  <div class="item">“Where Do Opportunity Zone Jobs Go? A Network Analysis of Employment Flows in Place-Based Tax Policy” (with Kishan Narayan). Presented at the 48th APPAM Fall Research Conference, 2026.</div>
+  <div class="item">“City Limits: The Relationship Between Employment and Minimum Wage Using Mobile-Device Locations.”</div>
+  <div class="item">“Estimating the Cost Savings of Tiered Care Coordination and High-Fidelity Wraparound: Evidence from North Carolina” (with Jeremy W. Bray and Zubab Moid).</div>
 
-    <h2 class="section">Education</h2>
-    <ul class="plain">
-      <li><strong>Ph.D., Economics</strong> — University of North Carolina at Greensboro <span class="meta">· 2023</span></li>
-      <li><strong>M.A., Economics</strong> — Central University of Kerala, India <span class="meta">· 2018</span></li>
-      <li><strong>B.Sc. (Honors), Mathematics</strong> — University of Delhi, India <span class="meta">· 2014</span></li>
-    </ul>
+  <h2>Applied and Policy Work</h2>
+  <ul>
+    <li><b>City of Boston.</b> Research partnership on the SuccessLink summer jobs program, which serves more than 10,000 young people a year. I wrote 12 analytical memos for the director of the City's Worker Empowerment Cabinet, built on linked state education records, applications and employers' hiring decisions.</li>
+    <li><b>North Carolina Department of Health and Human Services.</b> Evaluation of a statewide Medicaid care-coordination program using fee-for-service claims (more than 50 million records); emergency department spending fell about 20 percent.</li>
+    <li><b>New Jersey Department of Labor and Workforce Development.</b> Invited talk, 2026.</li>
+  </ul>
 
-    <h2 class="section">Grants, fellowships and awards</h2>
-    <ul class="plain">
-      <li>Institute for Humane Studies Grant <span class="meta">· 2025</span></li>
-      <li>Arnold Ventures Professional Development Grant <span class="meta">· 2024</span></li>
-      <li>Kathleen Price and Joseph M. Bryan Fellowship <span class="meta">· 2022&ndash;2023</span></li>
-      <li>University Grants Commission Merit Scholarship, Government of India <span class="meta">· 2016&ndash;2018</span></li>
-    </ul>
+  <h2>Data and Methods</h2>
+  <ul>
+    <li><b>Data:</b> job postings (LinkUp), worker profiles (People Data Labs), mobile-device locations, card transactions, Medicaid claims, LEHD/LODES, ACS, CPS; pipelines on more than 100 million monthly observations.</li>
+    <li><b>Methods:</b> difference-in-differences and event studies, regression discontinuity, instrumental variables, randomized trials, gravity models; topic models, sentence embeddings and classification for text.</li>
+    <li><b>Tools:</b> Python, SQL, R, Stata, SAS, Git, LaTeX, high-performance computing.</li>
+  </ul>
 
-    <h2 class="section">Methods and data</h2>
-    <p>
-      Difference-in-differences including staggered adoption, event-study designs, synthetic control and
-      synthetic DiD, regression discontinuity and difference-in-discontinuities. Machine learning,
-      artificial neural networks, topic modeling and text analysis, social network analysis.
-    </p>
-    <p>
-      Experience with online spending data, mobile-device location data, job-posting data, FFS-Medicaid
-      claims, LEHD, ACS/PUMS and CPS. R, Python, Stata, SQL, LaTeX.
-    </p>
+  <h2>Media Coverage and Writing</h2>
+  <ul>
+    <li>Research on California's fast-food minimum wage covered by <i>Inc.</i> and Phys.org.</li>
+    <li>California fast-food minimum wage paper cited in a <a href="https://cepr.org/voxeu/columns/establishment-level-evidence-californias-fast-food-minimum-wage" target="_blank" rel="noopener">VoxEU column</a> by Vitor Melo, David Neumark, Liam Sigaud and Gary A. Wagner (2026).</li>
+    <li>Research on New York City congestion pricing covered by Social Storytellers Collective.</li>
+    <li>Op-ed, “IndiGo's Dominance: Fragile Skies, Fare Caps, and India's Aviation Market,” <i>New India Abroad</i>.</li>
+  </ul>
 
-    <h2 class="section">Professional service</h2>
-    <p>
-      Referee for <em>Journal of Development Economics</em>, <em>Economics of Education Review</em>,
-      <em>Southern Economic Journal</em>, <em>Scientific Reports</em>,
-      <em>Humanities and Social Sciences Communications</em> and <em>Research in Labor Economics</em>.
-      Reviewer for the APPAM Equity Scholarship Program and the AcademyHealth Annual Research Meeting.
-    </p>
+  <h2>Peer Review</h2>
+  <div class="item">Referee for the <i>Journal of Development Economics</i> (6 reports), <i>Economics of Education Review</i> (9), <i>Southern Economic Journal</i>, <i>Scientific Reports</i> (3), <i>Humanities and Social Sciences Communications</i> and <i>Research in Labor Economics</i>; reviewer for the APPAM Equity Scholarship Program and the AcademyHealth Annual Research Meeting.</div>
 
-  </div>
+  <h2>Invited Talks</h2>
+  <div class="item">2026: Thapar University (Future of Work); Wayne State University; New Jersey Department of Labor and Workforce Development; St. Olaf College; Network Science Institute, Northeastern University. Earlier: C2C Policy Research Seminar and Policy Seminar, Northeastern University; National Institute of Technology, Surathkal.</div>
+
+  <h2>Grants and Fellowships</h2>
+  <div class="item">Faculty Development Fund Grant, Bates College (2026); Institute for Humane Studies Grant (2025); Arnold Ventures Professional Development Grant (2024); Kathleen Price and Joseph M. Bryan Fellowship, UNC Greensboro (2022–2023).</div>
+
+  <h2>Teaching</h2>
+  <ul>
+    <li><b>Bates College</b>: Statistics (ECON 250), Urban Economics (ECON 348), Data Science for Economists (ECON 368)</li>
+    <li><b>UNC Greensboro</b>: Principles of Microeconomics; Economics and Business Statistics</li>
+    <li><b>IIM Udaipur</b>: Microeconomics and Macroeconomics for MBA</li>
+  </ul>
+
+  <p class="note" style="margin-top:30px">Conference presentations, service and references are in the <a href="https://hitanshupandit.github.io/hitanshupandit.com/cv_hpandit.pdf" target="_blank" rel="noopener">full CV</a>.</p>
 </main>
+<script>
+  // Google Sites keeps an embed's width-to-height ratio fixed, so the page is laid
+  // out at 680px and scaled to the box width; it then fills the box at any size.
+  (function () {
+    var page = document.querySelector('.page');
+    function fit() { page.style.zoom = innerWidth / 680; }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+<script>
+  const c = document.getElementById('bg'), x = c.getContext('2d');
+  const still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W, H, P = [];
+  const r = (a, b) => Math.random() * (b - a) + a;
+  function size() { W = c.width = innerWidth; H = c.height = innerHeight;
+    P = Array.from({ length: Math.min(90, Math.floor(W * H / 18000)) }, () => ({ x: r(0, W), y: r(0, H), vx: r(-.2, .2), vy: r(-.2, .2), s: r(1, 2) })); }
+  function draw() {
+    x.clearRect(0, 0, W, H);
+    for (let i = 0; i < P.length; i++) {
+      const p = P[i];
+      if (!still) { p.x = (p.x + p.vx + W) % W; p.y = (p.y + p.vy + H) % H; }
+      x.beginPath(); x.arc(p.x, p.y, p.s, 0, 6.283); x.fillStyle = 'rgba(26,115,232,.18)'; x.fill();
+      for (let j = i + 1; j < P.length; j++) {
+        const q = P[j], d = Math.hypot(p.x - q.x, p.y - q.y);
+        if (d < 120) { x.beginPath(); x.moveTo(p.x, p.y); x.lineTo(q.x, q.y);
+          x.strokeStyle = `rgba(26,115,232,${(1 - d / 120) * .08})`; x.lineWidth = .8; x.stroke(); }
+      }
+    }
+    if (!still) requestAnimationFrame(draw);
+  }
+  addEventListener('resize', () => { size(); if (still) draw(); });
+  size(); draw();
+</script>
+<style>
+@media (pointer: fine) {
+  html.hp-cat-on, html.hp-cat-on body, html.hp-cat-on body * { cursor: none !important; }
+  html.hp-cat-on a, html.hp-cat-on a *, html.hp-cat-on button, html.hp-cat-on button *, html.hp-cat-on summary, html.hp-cat-on label { cursor: url("data:image/png;base64,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") 16 4, pointer !important; }
+}
+#hp-cat { position: fixed; left: 0; top: 0; width: 56px; height: 34px; z-index: 2147483647; pointer-events: none; display: none; will-change: transform; }
+html.hp-cat-on #hp-cat { display: block; }
+#hp-cat svg { width: 56px; height: 34px; display: block; overflow: visible; filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 1px 1.5px rgba(0,0,0,.35)); transition: transform .12s ease-out; transform-origin: 50% 50%; }
+#hp-cat.left svg { transform: scaleX(-1); }
+#hp-cat.link, #hp-cat.out { visibility: hidden; }
+#hp-cat .lg { transform-box: fill-box; transform-origin: top center; }
+#hp-cat .tl { transform-box: fill-box; transform-origin: 100% 100%; }
+#hp-cat.walk .lg.a { animation: hpstep .28s ease-in-out infinite alternate; }
+#hp-cat.walk .lg.b { animation: hpstep .28s ease-in-out infinite alternate-reverse; }
+#hp-cat.walk .tl { animation: hpwag .5s ease-in-out infinite alternate; }
+@keyframes hpstep { from { transform: rotate(22deg); } to { transform: rotate(-22deg); } }
+@keyframes hpwag { from { transform: rotate(-10deg); } to { transform: rotate(14deg); } }
+@media (prefers-reduced-motion: reduce) { #hp-cat.walk .lg.a, #hp-cat.walk .lg.b, #hp-cat.walk .tl { animation: none; } }
+#hp-face { position: fixed; left: 0; top: 0; width: 150px; height: 140px; z-index: 2147483647; pointer-events: none; opacity: 0; transform: scale(.6); transition: opacity .35s ease, transform .35s ease; }
+#hp-face svg { width: 150px; height: 140px; display: block; overflow: visible; filter: drop-shadow(0 2px 4px rgba(0,0,0,.25)); }
+html.hp-idle #hp-face { opacity: 1; transform: scale(1); }
+html.hp-idle #hp-cat { visibility: hidden; }
+#hp-face .eye { transform-box: fill-box; transform-origin: center; animation: hpblink 4s infinite; }
+@keyframes hpblink { 0%, 90%, 100% { transform: scaleY(1); } 94% { transform: scaleY(.08); } }
+@media (prefers-reduced-motion: reduce) { #hp-face .eye { animation: none; } #hp-face { transition: none; } }
+@media print { #hp-cat, #hp-face { display: none !important; } }
+</style>
+<script>
+(function () {
+  if (!window.matchMedia || !matchMedia('(pointer: fine)').matches) return;
+  if (document.getElementById('hp-cat')) return;
+  var cat = document.createElement('div');
+  cat.id = 'hp-cat';
+  cat.className = 'out';
+  cat.innerHTML = '<svg viewBox="0 0 120 72" aria-hidden="true"><g fill="#2f2f2f"><path class="tl" d="M28 34 C12 33 6 18 13 7 C15 4 19 5 18 9 C14 17 17 27 30 29 Z"/><rect class="lg b" x="32" y="40" width="8" height="27" rx="4"/><rect class="lg a" x="72" y="40" width="8" height="27" rx="4"/><ellipse cx="56" cy="38" rx="31" ry="14"/><rect class="lg a" x="42" y="42" width="8" height="27" rx="4"/><rect class="lg b" x="82" y="42" width="8" height="27" rx="4"/><path d="M80 34 C82 26 86 22 90 22 L92 14 Z"/><circle cx="96" cy="27" r="12.5"/><path d="M86 20 L88 6 L97 15 Z"/><path d="M97 15 L105 5 L107 20 Z"/></g><circle cx="101" cy="24" r="2.6" fill="#f2d16b"/><path d="M108.5 27.5 L106 29.5 L108.5 31 Z" fill="#f4a3b4"/><path d="M103 30 L117 28 M103 32 L117 34" stroke="#9a9a9a" stroke-width="1" stroke-linecap="round"/></svg>';
+  document.body.appendChild(cat);
+  document.documentElement.classList.add('hp-cat-on');
+  var face = document.createElement('div');
+  face.id = 'hp-face';
+  face.innerHTML = '<svg viewBox="0 0 150 140" aria-hidden="true"><path d="M22 62 L18 6 L62 34 Z M128 62 L132 6 L88 34 Z" fill="#2f2f2f"/><path d="M28 50 L26 20 L50 36 Z M122 50 L124 20 L100 36 Z" fill="#f4a3b4"/><ellipse cx="75" cy="80" rx="62" ry="54" fill="#2f2f2f"/><g class="eye"><ellipse cx="50" cy="74" rx="13" ry="15" fill="#f2d16b"/><ellipse cx="50" cy="75" rx="4" ry="11" fill="#1a1a1a"/><circle cx="54" cy="69" r="2.6" fill="#fff"/></g><g class="eye"><ellipse cx="100" cy="74" rx="13" ry="15" fill="#f2d16b"/><ellipse cx="100" cy="75" rx="4" ry="11" fill="#1a1a1a"/><circle cx="104" cy="69" r="2.6" fill="#fff"/></g><path d="M69 96 L81 96 L75 103 Z" fill="#f4a3b4"/><path d="M75 103 Q75 110 67 111 M75 103 Q75 110 83 111" stroke="#9a9a9a" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M58 100 L20 94 M58 105 L20 108 M92 100 L130 94 M92 105 L130 108" stroke="#bdbdbd" stroke-width="1.4" stroke-linecap="round"/></svg>';
+  document.body.appendChild(face);
+  var idleTimer = null, lastY = null;
+  function showFace() {
+    if (cat.classList.contains('out') || lastX === null) return;
+    var fx = Math.min(Math.max(lastX - 75, 4), innerWidth - 154);
+    var fy = Math.min(Math.max(lastY - 70, 4), innerHeight - 144);
+    face.style.left = fx + 'px'; face.style.top = fy + 'px';
+    document.documentElement.classList.add('hp-idle');
+  }
+  function wake() {
+    document.documentElement.classList.remove('hp-idle');
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(showFace, 4000);
+  }
+  var NOSE_X = 108 * 56 / 120, NOSE_Y = 29 * 34 / 72, lastX = null, stopTimer = null;
+  document.addEventListener('mousemove', function (e) {
+    var x = e.clientX, y = e.clientY;
+    if (lastX !== null && Math.abs(x - lastX) > 1) cat.classList.toggle('left', x < lastX);
+    lastX = x; lastY = y;
+    wake();
+    var dx = cat.classList.contains('left') ? (56 - NOSE_X) : NOSE_X;
+    cat.style.transform = 'translate(' + (x - dx) + 'px,' + (y - NOSE_Y) + 'px)';
+    cat.classList.remove('out');
+    cat.classList.toggle('link', !!(e.target.closest && e.target.closest('a, button, summary, label')));
+    cat.classList.add('walk');
+    clearTimeout(stopTimer);
+    stopTimer = setTimeout(function () { cat.classList.remove('walk'); }, 160);
+  }, { passive: true });
+  document.documentElement.addEventListener('mouseleave', function () { cat.classList.add('out'); document.documentElement.classList.remove('hp-idle'); clearTimeout(idleTimer); });
+  document.addEventListener('mousedown', wake, { passive: true });
+  document.addEventListener('keydown', wake);
+})();
+</script>
 
-<footer>
-  <div class="wrap">
-    Hitanshu Pandit &nbsp;&middot;&nbsp; Updated November 2026
-  </div>
-</footer>
-
+<div class="ssx-foot">Hitanshu Pandit &nbsp;&middot;&nbsp; Updated November 2026</div>
 </body>
 </html>
